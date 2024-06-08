@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulários em HTML</title>
+    </head>
+    <body>
+        
+        <main>
+
+            <h1>Formulário</h1>
+            <hr>
+            <br>
+
+            <form action="" method="post">
+                <div>
+                    <label for="texto">Faculdade:</label> <!--For tem que ser o mesmo do id do input-->
+                    <!-- placeholder coloca a descrição no input -->
+                     <!-- value = define o texto inicial -->
+                      <!-- nome =  forma que identifica esse campo em particular-->
+                    <input type="text" id="texto" placeholder="Informe seu nome......" value="Estudante de " name="TI"> 
+                </div>
+
+                <hr>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha">
+                </div><br><hr>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div><br><hr>
+
+                <div>
+                    <label for="data">Data de Nascimento:</label>
+                    <input type="date" id="data" name="data">
+                </div><br><hr>
+
+                <div>
+                    <label for="hora">Hora da Inscrição:</label>
+                    <input type="time" id="hora" name="hora">
+                </div>
+                <br><hr>
+
+                <div>
+                    <label for="cor">Escolha uma cor:</label>
+                    <input type="color" id="cor" name="cor">
+                </div>
+                <br><hr>
+
+                <div>
+                    <input type="range" id="qualquer" name="qualquer" >
+                </div>
+                <br><hr>
+
+                <div>
+                    <label for="checkbox"></label>
+                    <input type="checkbox" id="checkbox" name="checkbox">
+                </div>
+                <br><hr>
+
+                <div>
+                    <label for="radio">Selecione a opção desejada: </label>
+                    <input type="radio" id="radio" name="radio">
+                    <label for="radio">Selecione a opção desejada: </label>
+                    <input type="radio" id="radio" name="radio">
+                </div>
+                <br><hr>
+
+                <div>
+                    <input type="reset" id="limpar" name="limpar" value="Limpar">
+                </div>
+                <br><hr>
+
+                <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+
+                <div>
+                    <label for="select">Qual seu estado:</label>
+                    <select name="select" id="select">
+
+                        <option value="" disabled selected>Selecione o Estado......</option>
+                        <option value="São Paulo">SP</option>
+                        <option value="Rio de Janeiro">RJ</option>
+                        <option value="Minas Gerais">MG</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="submit" id="enviar" name="enviar" value="Enviar">
+
+                </div>
+                <br><hr>
+
+            </form>
+        </main>
+
+    </body>
+</html>
